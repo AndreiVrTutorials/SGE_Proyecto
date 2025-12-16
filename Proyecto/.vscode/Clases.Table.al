@@ -36,7 +36,7 @@ table 50104 "TablaClases"
 
     keys
     {
-        key(Key1; "Cod. Curso")
+        key(Key1; "Cod. Curso", "Seccion")
         {
             Clustered = true;
         }
