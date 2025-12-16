@@ -1,4 +1,4 @@
-table 50107 "TablaClaustro"
+table 50108 "TablaClaustro"
 {
     DataClassification = ToBeClassified;
 
