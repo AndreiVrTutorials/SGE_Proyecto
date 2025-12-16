@@ -7,6 +7,7 @@ table 50103 "TablaCursos"
         field(1; "Cod. Curso"; Code[3])
         {
             DataClassification = ToBeClassified;
+            Description = 'Clave principal';
         }
         field(2; "Nombre Curso"; Text[30])
         {
@@ -15,6 +16,7 @@ table 50103 "TablaCursos"
         field(3; "Desc. Curso"; Text[30])
         {
             DataClassification = ToBeClassified;
+            Description = 'Descripcion del curso';
         }
         field(4; "Creditos"; Integer)
         {
@@ -23,6 +25,7 @@ table 50103 "TablaCursos"
         field(5; "Tarifa"; Decimal)
         {
             DataClassification = ToBeClassified;
+            Description = 'Tarifa laboratorio';
         }
     }
     keys
