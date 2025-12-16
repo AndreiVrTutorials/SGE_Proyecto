@@ -7,7 +7,7 @@ table 50104 "TablaClases"
         field(1; "Cod. Curso"; Code[3])
         {
             DataClassification = ToBeClassified;
-            Description = 'Codigo del curso al que pertenece la clase';
+            Description = 'Clave principal';
         }
         field(2; "Seccion"; Text[2])
         {
