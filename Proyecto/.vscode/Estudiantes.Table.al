@@ -36,6 +36,11 @@ table 50105 "TablaEstudiantes"
             DataClassification = ToBeClassified;
             Description = 'Fecha nacimiento';
         }
+        field(7; "Cod. Tutor"; Code[2])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = "TablaClaustro"."Codigo Profesor";
+        }
     }
 
     keys

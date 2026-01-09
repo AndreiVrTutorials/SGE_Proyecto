@@ -4,7 +4,7 @@ table 50102 "TablaDepartamentos"
 
     fields
     {
-        field(1; "Codigo dept"; Code[3])
+        field(1; "Codigo dept"; Code[4])
         {
             DataClassification = ToBeClassified;
             Description = 'Clave principal';
@@ -18,6 +18,11 @@ table 50102 "TablaDepartamentos"
         field(3; "Despacho"; Integer)
         {
             DataClassification = ToBeClassified;
+        }
+        field(4; "DIRECTOR"; Code[2])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = "TablaClaustro"."Codigo Profesor";
         }
     }
 
