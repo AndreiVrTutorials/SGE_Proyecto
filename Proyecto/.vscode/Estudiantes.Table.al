@@ -40,10 +40,11 @@ table 50105 "TablaEstudiantes"
 
     keys
     {
-        key("Codigo estudiante"; "Codigo estudiante")
+        key(Key1; "Codigo estudiante")
         {
             Clustered = true;
         }
+        key(Key2; "Nombre", "Direccion", "Telefono") { }
     }
 
 }

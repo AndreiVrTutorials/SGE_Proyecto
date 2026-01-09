@@ -34,5 +34,6 @@ table 50103 "TablaCursos"
         {
             Clustered = true;
         }
+        key(Key2; "Nombre Curso", "Desc. Curso") { }
     }
 }

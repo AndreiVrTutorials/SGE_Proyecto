@@ -27,6 +27,10 @@ table 50108 "TablaClaustro"
             DataClassification = ToBeClassified;
             Description = 'Nº de ayudantes';
         }
+        field(6; "Sueldo"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys
@@ -34,6 +38,10 @@ table 50108 "TablaClaustro"
         key("Codigo Profesor"; "Codigo Profesor")
         {
             Clustered = true;
+        }
+        key(key2; "Nombre", "Direccion", "Fecha contr.", "Sueldo")
+        {
+
         }
     }
 

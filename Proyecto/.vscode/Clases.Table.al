@@ -40,5 +40,6 @@ table 50104 "TablaClases"
         {
             Clustered = true;
         }
+        key(Key2; "Dia") { }
     }
 }

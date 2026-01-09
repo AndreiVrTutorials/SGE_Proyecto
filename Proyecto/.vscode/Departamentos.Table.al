@@ -27,6 +27,7 @@ table 50102 "TablaDepartamentos"
         {
             Clustered = true;
         }
+        key(key2; "Despacho") { }
     }
 
 }

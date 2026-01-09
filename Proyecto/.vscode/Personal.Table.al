@@ -29,5 +29,9 @@ table 50107 "TablaPersonal"
         {
             Clustered = true;
         }
+        key(key2; "Nombre", "Cargo")
+        {
+
+        }
     }
 }

@@ -24,7 +24,7 @@ table 50106 "TablaMatriculas"
             DataClassification = ToBeClassified;
             Description = 'Fecha de matriculacion';
         }
-        field(5; "Hola Matricula"; Time)
+        field(5; "Hora Matricula"; Time)
         {
             DataClassification = ToBeClassified;
             Description = 'Hora de matriculacion';
@@ -37,6 +37,10 @@ table 50106 "TablaMatriculas"
         key(Key1; "Cod. Curso", "Seccion", "Cod. Estudiante")
         {
             Clustered = true;
+        }
+        key(key2; "Fecha Matricula", "Hora Matricula")
+        {
+
         }
     }
 }
