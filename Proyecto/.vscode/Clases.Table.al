@@ -9,11 +9,18 @@ table 50104 "TablaClases"
             DataClassification = ToBeClassified;
             Description = 'Clave principal';
             TableRelation = "TablaCursos"."Cod. Curso";
+            NotBlank = true;
+            trigger OnValidate()
+            begin
+                "Cod. Curso" := UpperCase("Cod. Curso");
+            end;
         }
         field(2; "Seccion"; Text[2])
         {
             DataClassification = ToBeClassified;
             Description = 'Numero de la seccion - Clave ppal';
+            Numeric = true;
+            NotBlank = true;
         }
         field(3; "Dia"; Text[10])
         {
@@ -28,10 +35,16 @@ table 50104 "TablaClases"
         field(5; "Edificio"; Text[2])
         {
             DataClassification = ToBeClassified;
+            trigger OnValidate()
+            begin
+                "Edificio" := UpperCase("Edificio");
+            end;
+
         }
         field(6; "Despacho"; Integer)
         {
             DataClassification = ToBeClassified;
+            MinValue = 0;
         }
     }
 

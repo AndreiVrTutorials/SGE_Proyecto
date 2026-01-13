@@ -8,16 +8,27 @@ table 50102 "TablaDepartamentos"
         {
             DataClassification = ToBeClassified;
             Description = 'Clave principal';
+            NotBlank = true;
+            trigger OnValidate()
+            begin
+                "Codigo dept" := UpperCase("Codigo dept");
+            end;
 
         }
         field(2; "Edificio"; Text[2])
         {
             DataClassification = ToBeClassified;
             Description = 'Ubicación del departamento';
+            trigger OnValidate()
+            begin
+                "Edificio" := UpperCase("Edificio");
+            end;
         }
         field(3; "Despacho"; Integer)
         {
             DataClassification = ToBeClassified;
+            InitValue = 0;
+            MinValue = 0;
         }
         field(4; "DIRECTOR"; Code[2])
         {

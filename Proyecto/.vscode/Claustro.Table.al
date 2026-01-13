@@ -8,10 +8,12 @@ table 50108 "TablaClaustro"
         {
             DataClassification = ToBeClassified;
             Description = 'Clave principal';
+            Numeric = true;
         }
         field(2; "Nombre"; Text[30])
         {
             DataClassification = ToBeClassified;
+            NotBlank = true;
         }
         field(3; "Direccion"; Text[50])
         {
@@ -26,10 +28,14 @@ table 50108 "TablaClaustro"
         {
             DataClassification = ToBeClassified;
             Description = 'Nº de ayudantes';
+            InitValue = 0;
+            MinValue = 0;
         }
         field(6; "Sueldo"; Decimal)
         {
             DataClassification = ToBeClassified;
+            MinValue = 0;
+            DecimalPlaces = 2;
         }
         field(7; "Codigo dept"; Code[4])
         {

@@ -8,10 +8,13 @@ table 50107 "TablaPersonal"
         {
             DataClassification = ToBeClassified;
             Description = 'Clave principal';
+            NotBlank = true;
+            Numeric = true;
         }
         field(2; "Nombre"; Text[30])
         {
             DataClassification = ToBeClassified;
+            NotBlank = true;
         }
         field(3; "Cargo"; Text[20])
         {
@@ -20,6 +23,8 @@ table 50107 "TablaPersonal"
         field(4; "Sueldo"; Decimal)
         {
             DataClassification = ToBeClassified;
+            DecimalPlaces = 2;
+            MinValue = 0;
         }
     }
 

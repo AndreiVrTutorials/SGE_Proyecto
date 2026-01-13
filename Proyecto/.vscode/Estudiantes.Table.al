@@ -8,17 +8,19 @@ table 50105 "TablaEstudiantes"
         {
             DataClassification = ToBeClassified;
             Description = 'Clave principal';
+            Numeric = true;
+            NotBlank = true;
 
         }
         field(2; "Nombre"; Text[30])
         {
             DataClassification = ToBeClassified;
+            NotBlank = true;
 
         }
         field(3; "Sexo"; Enum "Tipo Sexo")
         {
             DataClassification = ToBeClassified;
-
         }
 
         field(4; "Direccion"; Text[50])
@@ -29,6 +31,7 @@ table 50105 "TablaEstudiantes"
         field(5; "Telefono"; Text[9])
         {
             DataClassification = ToBeClassified;
+            Numeric = true;
 
         }
         field(6; "Fecha nac."; Date)
