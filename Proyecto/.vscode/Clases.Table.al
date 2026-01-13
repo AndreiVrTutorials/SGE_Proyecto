@@ -46,6 +46,10 @@ table 50104 "TablaClases"
             DataClassification = ToBeClassified;
             MinValue = 0;
         }
+        field(7; "Cod. Profesor"; Code[2])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys

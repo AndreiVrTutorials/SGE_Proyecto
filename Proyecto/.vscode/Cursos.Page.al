@@ -20,6 +20,10 @@ page 50102 "List Cursos"
                 field("Desc. Curso"; Rec."Desc. Curso") { }
                 field("Creditos"; Rec."Creditos") { }
                 field("Tarifa"; Rec."Tarifa") { }
+                field("Cod. Departamento"; Rec."Cod. Departamento")
+                {
+                    TableRelation = "TablaDepartamentos"."Codigo dept";
+                }
             }
         }
 

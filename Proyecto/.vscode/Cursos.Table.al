@@ -38,6 +38,12 @@ table 50103 "TablaCursos"
             Description = 'Tarifa laboratorio';
             DecimalPlaces = 2;
         }
+        field(6; "Cod. Departamento"; Code[4])
+        {
+            DataClassification = ToBeClassified;
+            Description = 'Codigo del departamento';
+            TableRelation = "TablaDepartamentos"."Codigo dept";
+        }
     }
     keys
     {

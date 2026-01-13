@@ -5,10 +5,10 @@ enum 50101 "Tipo Sexo"
     value(0; "")
     {
     }
-    value(1; "Masculino")
+    value(1; "H")
     {
     }
-    value(2; "Femenino")
+    value(2; "M")
     {
     }
 }

@@ -1,4 +1,4 @@
-page 50101 "Lista Clases Page"
+page 50101 "Lista Clases"
 {
     PageType = List;
     ApplicationArea = All;
@@ -20,6 +20,7 @@ page 50101 "Lista Clases Page"
                 field("Hora"; Rec."Hora") { }
                 field("Edificio"; Rec."Edificio") { }
                 field("Despacho"; Rec."Despacho") { }
+                field("Cod. Profesor"; Rec."Cod. Profesor") { }
             }
         }
 
