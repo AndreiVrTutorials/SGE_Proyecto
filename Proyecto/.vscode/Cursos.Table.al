@@ -8,6 +8,7 @@ table 50103 "TablaCursos"
         {
             DataClassification = ToBeClassified;
             Description = 'Clave principal';
+            TableRelation = "TablaDepartamentos"."Codigo dept";
         }
         field(2; "Nombre Curso"; Text[30])
         {
