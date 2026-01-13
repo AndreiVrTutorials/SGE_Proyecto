@@ -31,6 +31,11 @@ table 50108 "TablaClaustro"
         {
             DataClassification = ToBeClassified;
         }
+        field(7; "Codigo dept"; Code[4])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = "TablaDepartamentos"."Codigo dept";
+        }
     }
 
     keys
