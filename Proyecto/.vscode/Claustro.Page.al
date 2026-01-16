@@ -21,9 +21,11 @@ page 50100 "Lista Claustro"
                 {
                     TableRelation = "TablaDepartamentos"."Codigo dept";
                 }
+                field("Numero Clases"; Rec."Num. Clases")
+                {
+
+                }
             }
         }
-
     }
-
 }

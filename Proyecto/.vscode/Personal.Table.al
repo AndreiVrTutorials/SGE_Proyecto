@@ -26,6 +26,11 @@ table 50107 "TablaPersonal"
             DecimalPlaces = 2;
             MinValue = 0;
         }
+        field(5; "Codigo Profesor"; Code[2])
+        {
+            Caption = 'Profesor Asignado';
+            TableRelation = "TablaClaustro"."Codigo Profesor";
+        }
     }
 
     keys

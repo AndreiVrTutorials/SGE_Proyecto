@@ -16,6 +16,7 @@ page 50106 "List Personal"
                 field("Nombre"; Rec."Nombre") { }
                 field("Cargo"; Rec."Cargo") { }
                 field("Sueldo"; Rec."Sueldo") { }
+                field("Codigo profesor"; Rec."Codigo profesor") { }
             }
         }
     }

@@ -35,6 +35,12 @@ table 50102 "TablaDepartamentos"
             DataClassification = ToBeClassified;
             TableRelation = "TablaClaustro"."Codigo Profesor";
         }
+        field(5; "Promedio Tarifa"; Decimal)
+        {
+            Caption = 'Promedio Tarifa Laboratorio';
+            FieldClass = FlowField;
+            CalcFormula = Average("TablaCursos".Tarifa where("Cod. Departamento" = field("Codigo dept")));
+        }
     }
 
     keys

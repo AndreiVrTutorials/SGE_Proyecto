@@ -18,6 +18,7 @@ page 50103 "List Departamentos"
                 {
                     TableRelation = "TablaClaustro"."Codigo Profesor";
                 }
+                field("Promedio tarifa"; Rec."Promedio Tarifa") { }
             }
         }
 

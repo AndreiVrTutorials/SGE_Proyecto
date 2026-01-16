@@ -42,6 +42,25 @@ table 50108 "TablaClaustro"
             DataClassification = ToBeClassified;
             TableRelation = "TablaDepartamentos"."Codigo dept";
         }
+        field(8; "Num Ayudante"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = Count("TablaPersonal" where("Cargo" = const('Ayudante'),
+                                             "Codigo Profesor" = field("Codigo Profesor")));
+            Editable = false;
+        }
+        field(9; "Filtro Día"; Text[10])
+        {
+            FieldClass = FlowFilter;
+        }
+
+        field(10; "Num. Clases"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = Count("TablaClases" where("Cod. Profesor" = field("Codigo Profesor"),
+                                            Dia = field("Filtro Día")));
+            Editable = false;
+        }
     }
 
     keys
