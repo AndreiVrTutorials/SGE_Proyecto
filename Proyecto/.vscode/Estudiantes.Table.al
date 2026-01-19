@@ -50,7 +50,7 @@ table 50105 "TablaEstudiantes"
     {
         key(Key1; "Codigo estudiante")
         {
-            Clustered = true;
+
         }
         key(Key2; "Nombre", "Direccion", "Telefono") { }
     }

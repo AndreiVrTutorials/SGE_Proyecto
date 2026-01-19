@@ -65,9 +65,9 @@ table 50108 "TablaClaustro"
 
     keys
     {
-        key("Codigo Profesor"; "Codigo Profesor")
+        key(key1; "Codigo Profesor")
         {
-            Clustered = true;
+
         }
         key(key2; "Nombre", "Direccion", "Fecha contr.", "Sueldo")
         {
