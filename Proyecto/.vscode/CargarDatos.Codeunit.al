@@ -109,6 +109,7 @@ codeunit 50100 "CargarDatosAuto"
             PersonalRec."Nombre" := 'Prada Barrios, Alberto';
             PersonalRec."Cargo" := 'Ayudante';
             PersonalRec."Sueldo" := 650.00;
+            PersonalRec."Codigo Profesor" := '47';
             PersonalRec.Insert();
         end;
 
