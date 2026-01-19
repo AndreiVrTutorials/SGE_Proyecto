@@ -24,37 +24,31 @@ table 50108 "TablaClaustro"
             DataClassification = ToBeClassified;
             Description = 'Fecha contratacion';
         }
-        field(5; "Num. ayud."; Integer)
-        {
-            DataClassification = ToBeClassified;
-            Description = 'Nº de ayudantes';
-            InitValue = 0;
-            MinValue = 0;
-        }
-        field(6; "Sueldo"; Decimal)
+
+        field(5; "Sueldo"; Decimal)
         {
             DataClassification = ToBeClassified;
             MinValue = 0;
             DecimalPlaces = 2;
         }
-        field(7; "Codigo dept"; Code[4])
+        field(6; "Codigo dept"; Code[4])
         {
             DataClassification = ToBeClassified;
             TableRelation = "TablaDepartamentos"."Codigo dept";
         }
-        field(8; "Num Ayudante"; Integer)
+        field(7; "Num Ayudante"; Integer)
         {
             FieldClass = FlowField;
             CalcFormula = Count("TablaPersonal" where("Cargo" = const('Ayudante'),
                                              "Codigo Profesor" = field("Codigo Profesor")));
             Editable = false;
         }
-        field(9; "Filtro Día"; Text[10])
+        field(8; "Filtro Día"; Text[10])
         {
             FieldClass = FlowFilter;
         }
 
-        field(10; "Num. Clases"; Integer)
+        field(9; "Num. Clases"; Integer)
         {
             FieldClass = FlowField;
             CalcFormula = Count("TablaClases" where("Cod. Profesor" = field("Codigo Profesor"),

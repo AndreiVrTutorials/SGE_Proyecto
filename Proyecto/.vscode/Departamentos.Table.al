@@ -47,7 +47,7 @@ table 50102 "TablaDepartamentos"
     {
         key(Key1; "Codigo dept")
         {
-
+            Clustered = true;
         }
         key(key2; "Despacho") { }
     }

@@ -15,7 +15,7 @@ page 50100 "Lista Claustro"
                 field("Nombre"; Rec."Nombre") { }
                 field("Direccion"; Rec."Direccion") { }
                 field("Fecha contr."; Rec."Fecha contr.") { }
-                field("Num. ayud."; Rec."Num. ayud.") { }
+                field("Num. ayud."; Rec."Num Ayudante") { }
                 field("Sueldo"; Rec."Sueldo") { }
                 field("Codigo dept"; Rec."Codigo dept")
                 {

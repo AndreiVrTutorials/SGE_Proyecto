@@ -8,7 +8,6 @@ table 50103 "TablaCursos"
         {
             DataClassification = ToBeClassified;
             Description = 'Clave principal';
-            TableRelation = "TablaDepartamentos"."Codigo dept";
             NotBlank = true;
             trigger OnValidate()
             begin

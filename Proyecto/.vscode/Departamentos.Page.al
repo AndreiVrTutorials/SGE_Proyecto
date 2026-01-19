@@ -1,4 +1,4 @@
-page 50103 "List Departamentos"
+page 50103 "Lista Departamentos"
 {
     PageType = List;
     ApplicationArea = All;

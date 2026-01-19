@@ -2,7 +2,7 @@ codeunit 50100 "CargarDatosAuto"
 {
     Subtype = Install;
 
-    trigger OnRun()
+    trigger OnInstallAppPerCompany()
     begin
         InsertarDepartamentos();
         InsertarClaustro();
@@ -44,7 +44,7 @@ codeunit 50100 "CargarDatosAuto"
             ProfesorRec."Nombre" := 'Sánchez Prieto, María';
             ProfesorRec."Direccion" := 'Plaza Madrid, 16 1º - 47001';
             ProfesorRec."Fecha contr." := DMY2DATE(1, 9, 2010);
-            ProfesorRec."Num. Ayud." := 0;
+            ProfesorRec."Num Ayudante" := 0;
             ProfesorRec."Sueldo" := 1500.00;
             ProfesorRec."Codigo dept" := 'LET';
             ProfesorRec.Insert();
@@ -56,7 +56,7 @@ codeunit 50100 "CargarDatosAuto"
             ProfesorRec."Nombre" := 'Cuesta Arriba, Tomás';
             ProfesorRec."Direccion" := 'Calle Góndola, 74 3ºB - 47014';
             ProfesorRec."Fecha contr." := DMY2DATE(30, 6, 2005);
-            ProfesorRec."Num. Ayud." := 1;
+            ProfesorRec."Num Ayudante" := 1;
             ProfesorRec."Sueldo" := 1800.00;
             ProfesorRec."Codigo dept" := 'INFO';
             ProfesorRec.Insert();
@@ -68,7 +68,7 @@ codeunit 50100 "CargarDatosAuto"
             ProfesorRec."Nombre" := 'Zalama Bueno, Inés';
             ProfesorRec."Direccion" := 'Calle Cerrada, 3 - 47012';
             ProfesorRec."Fecha contr." := DMY2DATE(25, 9, 2012);
-            ProfesorRec."Num. Ayud." := 0;
+            ProfesorRec."Num Ayudante" := 0;
             ProfesorRec."Sueldo" := 1250.00;
             ProfesorRec."Codigo dept" := 'INFO';
             ProfesorRec.Insert();

@@ -1,4 +1,4 @@
-page 50102 "List Cursos"
+page 50102 "Lista Cursos"
 {
     PageType = List;
     ApplicationArea = All;

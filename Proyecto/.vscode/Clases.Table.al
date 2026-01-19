@@ -49,6 +49,7 @@ table 50104 "TablaClases"
         field(7; "Cod. Profesor"; Code[2])
         {
             DataClassification = ToBeClassified;
+            TableRelation = "TablaClaustro"."Codigo Profesor";
         }
     }
 
